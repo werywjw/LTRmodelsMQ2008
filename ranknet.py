@@ -6,7 +6,8 @@ from dataloader import load_data
 
 if __name__ == '__main__':
 
-    folder = '/Users/mohit/Documents/Grad_Courses/spring20/info-retrieval/learning_to_rank/MQ2008/Fold1/'
+    #folder = '/Users/mohit/Documents/Grad_Courses/spring20/info-retrieval/learning_to_rank/MQ2008/Fold1/'
+    folder = '/Users/wery/Desktop/BAJiawenWang/dataset/MQ2008/Fold1/'
     X, y, qid = load_data(folder + 'train.txt')
     Xtest, ytest, qid_test = load_data(folder + 'test.txt')
 
