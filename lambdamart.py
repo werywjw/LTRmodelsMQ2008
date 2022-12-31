@@ -1,7 +1,8 @@
 import pyltr
 
 if __name__ == '__main__':
-    folder = '/Users/mohit/Documents/Grad_Courses/spring20/info-retrieval/learning_to_rank/MQ2008/Fold1/'
+    #folder = '/Users/mohit/Documents/Grad_Courses/spring20/info-retrieval/learning_to_rank/MQ2008/Fold1/'
+    folder = '/Users/wery/Desktop/BAJiawenWang/dataset/MQ2008/Fold1/'
 
     with open(folder + 'train.txt') as trainfile, \
             open(folder + 'vali.txt') as valifile, \
@@ -27,7 +28,7 @@ if __name__ == '__main__':
             verbose=1,
         )
 
-        # model.fit(TX, Ty, Tqids, monitor=monitor)
+        #model.fit(TX, Ty, Tqids, monitor=monitor)
         model.fit(TX, Ty, Tqids)
 
         Epred = model.predict(EX)

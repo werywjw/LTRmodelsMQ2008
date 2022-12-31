@@ -12,7 +12,7 @@ if __name__ == '__main__':
     Xtest, ytest, qid_test = load_data(folder + 'test.txt')
 
     epochs = 20
-    # train model
+
     ranker = LambdaRankNN(input_size=X.shape[1], hidden_layer_sizes=(16,8,), activation=('relu', 'relu'), solver='adam')
     # ranker = LambdaRankNN(input_size=X.shape[1], hidden_layer_sizes=(32,16,8,), activation=('relu', 'relu', 'relu'), solver='adam')
     ranker.fit(X, y, qid, epochs=epochs)

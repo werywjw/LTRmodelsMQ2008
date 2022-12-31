@@ -29,4 +29,4 @@ def load_data(filename):
             y.append(yi)
             q.append(qi)
             info.append(comment)
-        return np.array(x, dtype=np.float32), np.array(y, dtype=np.int), np.array(q, dtype=np.int)
+        return np.array(x, dtype=np.float32), np.array(y, dtype=np.float32), np.array(q, dtype=np.float32)

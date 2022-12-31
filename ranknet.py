@@ -23,7 +23,7 @@ if __name__ == '__main__':
     ranker.evaluate(X, y, qid, eval_at=50)
     ranker.evaluate(X, y, qid, eval_at=100)
     print("Test")
-    ranker.evaluate(Xtest, ytest, qid_test, eval_at=5)
+    ranker.evaluate(Xtest, ytest, qid_test, eval_at=5) #ndcg@5: 0.38609914482977487
     ranker.evaluate(Xtest, ytest, qid_test, eval_at=10)
     ranker.evaluate(Xtest, ytest, qid_test, eval_at=50)
     ranker.evaluate(Xtest, ytest, qid_test, eval_at=100)
